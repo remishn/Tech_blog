@@ -1,0 +1,24 @@
+{
+  "name": "tech_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remishn/Tech_blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remishn/Tech_blog/issues"
+  },
+  "homepage": "https://github.com/remishn/Tech_blog#readme",
+  "dependencies": {
+    "modules": "^0.4.0",
+    "node": "^18.7.0"
+  }
+}
