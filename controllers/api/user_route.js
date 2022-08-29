@@ -96,8 +96,6 @@ router.post('/', (req, res) => {
         // declare session variables
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
-        req.session.twitter = dbUserData.twitter;
-        req.session.github = dbUserData.github;
         req.session.loggedIn = true;
   
         res.json({ user: dbUserData, message: 'You are now logged in!' });
@@ -117,7 +115,7 @@ router.post('/', (req, res) => {
     }
   });
 
-// PUT /api/users/1
+// update with user id 
 router.put('/:id', withAuth, (req, res) => {
     User.update(req.body, {
         individualHooks: true,
@@ -138,7 +136,7 @@ router.put('/:id', withAuth, (req, res) => {
       });
   });
 
-// DELETE /api/users/1
+// delete with user id
 router.delete('/:id', withAuth, (req, res) => {
     User.destroy({
       where: {
