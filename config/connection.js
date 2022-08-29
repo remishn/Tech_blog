@@ -1,9 +1,9 @@
-// Import the Sequelize constructor from the library
+// Import Sequelize constructor 
 const Sequelize = require('sequelize')
 
 require('dotenv').config()
 
-// Create connection to our database, pass in your MySQL information for username and password
+//  connect to database with my SQL username and password
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
