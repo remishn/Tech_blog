@@ -3,7 +3,7 @@ const { Post } = require('../models');
 const postData = [
     {
         title: "Receipe me website up and running!",
-        post_content: "checkout to add and ramdomize receipe ",
+        post_content: "checkout to add and randomize receipe ",
         user_id: 3
     },
     {
